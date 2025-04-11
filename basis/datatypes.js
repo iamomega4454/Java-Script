@@ -7,6 +7,7 @@ console.log(typeof name)  //string
 console.log(typeof age)  //number
 console.log(typeof type)    //boolean
 console.log(typeof workingstate)   //object
+console.log(typeof undefined)//undefined
 
 
 
