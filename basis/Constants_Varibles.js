@@ -1,4 +1,4 @@
-const accountNumber = 035798634
+const accountNumber = 35798634
 let emailId = "iamomega1403@gmail.com"
 var password = "123456789"                  //do not use var ->issue in block scope and functional scope                                                   
 accountType = "NRI"
