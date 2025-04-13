@@ -30,3 +30,7 @@ const MyFunction = function(){
 MyFunction()        //printing the content of function
 console.log( typeof MyFunction); //function
 //**************************************************************************** */
+
+// 2 types of memmory -> stack and heap
+// stack -> primitive data types
+// heap -> non primitive data types
