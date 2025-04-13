@@ -22,13 +22,11 @@ let myDetails = {
     name : "Amal",
     age : 22 
 };
-console.log(myDetails); //object
+console.log(myDetails); //object printing);
 
 const MyFunction = function(){
     console.log("Hello world");
 };
-console.log(MyFunction); //function
-//function printing
+MyFunction()        //printing the content of function
 console.log( typeof MyFunction); //function
-
 //**************************************************************************** */
