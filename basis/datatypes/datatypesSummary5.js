@@ -50,12 +50,7 @@ let gpayDetails = {
     name : "Amal",
     upi : "Amal243@okhdfc"
 };
-let gpayDetails1 = gpayDetails.name; //copying the reference of gpayDetails to gpayDetails1
-console.log(gpayDetails); //object printing
-console.log(gpayDetails1); //object printing
-gpayDetails1.name = "dominic";
-console.log(gpayDetails); //object printing
-console.log(gpayDetails1); //object printing);
-// here the the value of gpayDetails1 is changed but the value of gpayDetails is not changed
-// this is because the value of gpayDetails1 is copied to gpayDetails and not the reference
-// so the value of gpayDetails is not changed
+let gpayDetails1 = gpayDetails; // Copying the object reference
+gpayDetails1.name = "dominic"; // Modifies the original object's 'name' property
+console.log(gpayDetails); // Reflects the updated name
+console.log(gpayDetails1); // Also reflects the updated name
