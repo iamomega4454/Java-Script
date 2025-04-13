@@ -15,6 +15,9 @@ console.log(id == anotherid);   //    checking -> false
 // Array, Objects, Functions
 
 const heros = ["Batman","Superman","Wonderwomen","Flash","Aquaman"]     //array
+console.log(heros); //array printing
+console.log(typeof heros); //object
+
 let myDetails = {
     name : "Amal",
     age : 22 
@@ -24,6 +27,8 @@ console.log(myDetails); //object
 const MyFunction = function(){
     console.log("Hello world");
 };
+console.log(MyFunction); //function
+//function printing
 console.log( typeof MyFunction); //function
 
 //**************************************************************************** */
