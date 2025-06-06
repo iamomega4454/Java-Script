@@ -31,10 +31,10 @@ console.log(jsuser["name"]);       //amal  new value didnt change
 
 // using functions
 
-// jsuser.greeting = function(){
-//     console.log("hello js user");
-// }
-// console.log(jsuser.greeting());
+jsuser.greeting = function(){
+    console.log("hello js user");
+}
+console.log(jsuser.greeting());
 
 jsuser.greetingtwo = function(){
     console.log(`hello js user,${this["full name"]}`);
