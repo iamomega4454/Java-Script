@@ -1,0 +1,56 @@
+function fun(){
+    console.log("a")
+    console.log('m')
+    console.log('a')
+    console.log('l')
+}
+fun();  // to execute function
+
+function addtwonumbers(number1,number2){
+    console.log(number1+number2);
+    
+}
+addtwonumbers(4,7);
+
+const res = addtwonumbers(2,6)
+console.log(res);   //undefined ie it will not return
+
+// to do this:
+function addtwonumbers(number1,number2){
+    let res=number1+number2 // or delete this line
+    return res  // and return number1+number2
+}
+const resu=addtwonumbers(3,9)   // and do this
+console.log(resu);
+
+function loggedinusermessage(username){
+    return `${username} is just logged in`
+}
+loggedinusermessage("amal") // will not print anything
+
+console.log(loggedinusermessage("amal"));   //amal is just logged in
+
+// console.log(loggedinusermessage()); //undefined is just logged in
+
+
+function loggedinusermessage(username){
+    if(!username){
+        return `please enter username`
+    }
+    return `${username} is just logged in`
+}
+
+console.log(loggedinusermessage()); // here it is undefined so return from if will work
+
+// function loggedinusermessage(username){
+//     if(username=="bald"){
+//         return `please enter username`
+//     }
+//     return `${username} is just logged in`
+// }
+
+// console.log(loggedinusermessage("bald"));   //please enter username
+
+
+
+
