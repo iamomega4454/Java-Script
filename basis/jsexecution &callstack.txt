@@ -1,0 +1,84 @@
+java script execution context 
+
+js is single treaded 
+
+types of execution context=>
+=>global execution context
+=>function execution  context
+=>eval execution context
+
+suppose {......} has js code --- memory creation phase
+
+eg: let var1=20;                       
+    let var2=30;                                                       
+     function addnum(num1,num2){          
+        let total = num1+num2;            
+        return total                       
+     }                                     
+     let result = addnum(var1,var2);      
+     let res=addnum(2,8);
+
+ 1. run by global execution allocated by this
+ 2.memory creation phase 
+    val1-undefiled     
+    var2-undefiled 
+    result-undefiled
+    res-undefiled
+3.execution phase
+    val1<--20
+    val2<--30
+    addnum-->new variable environment
+                    +
+               execution thread     // add num has a function therefore function has a memmory and execution phase 
+                    |
+                    |
+                memmory phase
+                    val1-->undefiled
+                    var2-undefiled
+                    total-->undefiled
+                    |
+                    |
+                    |
+                execution phase
+                    num1-->20
+                    num2-->30
+                    total-->50 -------->will return to global execution context 
+the the value which is in global execution context will be deleted when considering result and res
+
+ie..when considering total=>
+new variable environment
+                    +
+               execution thread      
+                    |
+                    |
+                memmory phase
+                    val1-->undefiled
+                    var2-undefiled
+                    total-->undefiled
+                    |
+                    |
+                    |
+                execution phase
+                    num1-->20
+                    num2-->30
+                    total-->50 -------->will return to global execution context 
+                     then res will be considered
+
+
+***************call stack****************
+
+ie. when considering a method it has=> new variable environment
+                                                 +
+                                        execution thread
+                                        then 2 phases will be there then go to global execution context
+but in call stack the method has other method
+
+eg...
+if we have 3 methods one() two() three()
+if we call one(two(three()))  one method inside another 
+
+then global execution context has --->GEC=>one()two()three()
+then which one will come out first
+ie. it follows LIFO principle(last in first out)
+
+                                    
