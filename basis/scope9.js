@@ -1,3 +1,4 @@
+//using var inside a scope and calling outside a scope will not occur error*************************************
 // normaly scope is: {     }
 let a=300           // global scope
 var c=80
